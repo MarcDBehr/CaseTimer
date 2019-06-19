@@ -48,7 +48,7 @@
             helper.updateStatus(component, event);
         }, 1);
         var theCase = component.get('v.simpleCase');
-        if(theCase.Status === 'Closed') {
+        if(theCase.IsClosed) {
             component.set('v.disabled',true);
             $A.util.addClass(component.find("timerDiv"), "slds-hide");
             component.set('v.playing',false);
